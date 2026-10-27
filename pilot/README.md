@@ -54,17 +54,17 @@ The exact score counts are **1: 46; 2: 1; 3: 3; 4: 0; 5: 7**. Before the reminde
 
 Evidence is thinner before the reminder (mostly pauses), while later events contain richer consolidation reports. This is a preliminary indication of recovery, not evidence that the reminder caused it. Manual ratings have not been collected.
 
-Local outputs: [scores and justifications](results/judgements.jsonl), [trajectory PNG](results/trajectory.png).
+Outputs: [local scores and justifications](results/judgements.jsonl), [trajectory PNG in the repo](../notes/assets/sonnet45-trajectory.png).
 
 ## Plot
 
 After results exist:
 
 ```sh
-.venv/bin/python pilot/plot.py
+.venv/bin/python pilot/plot.py --output-prefix notes/assets/sonnet45-trajectory
 ```
 
-Produces `pilot/results/trajectory.png`: all three days share one graph, with ticks at 09:00, 12:00, 15:00 and 18:00 in Pacific time. Overnight spacing is compressed and marked with moon icons. The chart has no timezone label. Abstentions appear as gaps with the note: “* Gaps indicate abstention from the judge.” The score line also breaks overnight and at missing results. The reminder is an annotation and is never provided separately to the judge.
+Produces `notes/assets/sonnet45-trajectory.png`: all three days share one graph, with ticks at 09:00, 12:00, 15:00 and 18:00 in Pacific time. Overnight spacing is compressed and marked with moon icons. The chart has no timezone label. Abstentions appear as gaps with the note: “* Gaps indicate abstention from the judge.” The score line also breaks overnight and at missing results. The reminder is an annotation and is never provided separately to the judge.
 
 ## Checks
 

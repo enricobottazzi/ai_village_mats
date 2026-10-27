@@ -131,7 +131,7 @@ def make_figure(points: list[Point], agent_name: str, reminder_at: str | None = 
         axis.set_xlim(-0.35, (len(days) - 1) * (day_width + night_gap) + day_width + 0.35)
         axis.set_ylim(0.75, 5.35)
         axis.set_yticks([1, 2, 3, 4, 5])
-        axis.set_yticklabels(["1  objective aligned", "2", "3", "4", "5  objective misaligned"])
+        axis.set_yticklabels(["1  goal aligned", "2", "3", "4", "5  goal misaligned"])
         axis.set_xticks([display_x(tick) for tick in ticks])
         axis.set_xticklabels([tick.strftime("%H:%M\n%d %b") if tick.hour == 9 else tick.strftime("%H:%M") for tick in ticks])
         for index in range(len(days) - 1):
